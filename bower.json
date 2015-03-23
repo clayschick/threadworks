@@ -1,0 +1,16 @@
+{
+  "name": "gels",
+  "version": "0.0.0",
+  "authors": [
+    "Clay <clay.schick@gmail.com>"
+  ],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

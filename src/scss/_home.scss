@@ -1,0 +1,109 @@
+@import "../../bower_components/foundation/scss/foundation/functions";
+/* Main Primary color */
+$color-primary-0: #bf77df;
+$color-primary-1: #f1d8fc;
+$color-primary-2: #d8a5ef;
+$color-primary-3: #b784cd;
+$color-primary-4: #7812a5;
+/* Main Secondary color (1) */
+$color-secondary-1-0: #fe8285;
+$color-secondary-1-1: #ffd8d9;
+$color-secondary-1-2: #ffadaf;
+$color-secondary-1-3: #fe9fa1;
+$color-secondary-1-4: #f61016;
+/* Main Secondary color (2) */
+$color-secondary-2-0: #8190e1;
+$color-secondary-2-1: #dbe0fc;
+$color-secondary-2-2: #acb7ef;
+$color-secondary-2-3: #8c97d0;
+$color-secondary-2-4: #1f35aa;
+/* As RGBa codes */
+/* Main Primary color */
+$rgba-primary-0: rgba(191,119,223,1);
+$rgba-primary-1: rgba(241,216,252,1);
+$rgba-primary-2: rgba(216,165,239,1);
+$rgba-primary-3: rgba(183,132,205,1);
+$rgba-primary-4: rgba(120, 18,165,1);
+/* Main Secondary color (1) */
+$rgba-secondary-1-0: rgba(254,130,133,1);
+$rgba-secondary-1-1: rgba(255,216,217,1);
+$rgba-secondary-1-2: rgba(255,173,175,1);
+$rgba-secondary-1-3: rgba(254,159,161,1);
+$rgba-secondary-1-4: rgba(246, 16, 22,1);
+/* Main Secondary color (2) */
+$rgba-secondary-2-0: rgba(129,144,225,1);
+$rgba-secondary-2-1: rgba(219,224,252,1);
+$rgba-secondary-2-2: rgba(172,183,239,1);
+$rgba-secondary-2-3: rgba(140,151,208,1);
+$rgba-secondary-2-4: rgba( 31, 53,170,1);
+$form-spacing: rem-calc(16) !default;
+$estimate-input-font-size: rem-calc(25) !default;
+h1 {
+  font-family: 'Alegreya', serif;
+  padding-bottom: 35px;
+  padding-top: 25px;
+  font-weight: 700;
+  font-size: 48px;
+}
+#image {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-image: url("../img/quilt4.jpg");
+  background-size: cover;
+}
+#content {
+  position: absolute;
+  top: 100%;
+  width: 100%;
+  //height: 200px;
+}
+.purple-box {
+  background-color: rgba(66, 39,59,0.55);
+  padding: 35px;
+  margin-top: 25%;
+  font-weight: 900;
+  #estimate-logic {
+    margin-top: 30px;
+    input[type=text].estimate-input {
+      background-color: inherit;
+      color: #fff;
+      font-size: $estimate-input-font-size;
+      height: ($estimate-input-font-size + ($form-spacing * 1.5) - rem-calc(1));
+      line-height: ($estimate-input-font-size + ($form-spacing * 1.5) - rem-calc(1));
+      &::-webkit-input-placeholder {
+        font-size: initial;
+      }
+      &::-moz-placeholder {
+        font-size: initial;
+      }
+      &:-ms-input-placeholder {
+        font-size: initial;
+      }
+      &:-moz-placeholder {
+        font-size: initial;
+      }
+      &:focus {
+        background-color: inherit;
+      }
+    }
+    #price {
+      font-size: 72px;
+      //color: rgba(169,168,204,1);
+    }
+  }
+}
+.hero-content {
+  background-color: #fff;
+}
+.about-content {
+  //background-color: $rgba-primary-1;
+  background-color: rgba(112,86,109,1);
+}
+.solid-background {
+  background-color: $rgba-primary-2;
+  .panel {
+    box-shadow: none;
+    background-color: inherit;
+  }
+}
