@@ -163,12 +163,16 @@ footer p, footer a {
 /* Main Primary color */
 /* Main Secondary color (1) */
 /* Main Secondary color (2) */
-h1 {
-  font-family: 'Alegreya', serif;
-  padding-bottom: 35px;
-  padding-top: 25px;
-  font-weight: 700;
-  font-size: 48px; }
+body {
+  font-family: 'Asap', sans-serif; }
+
+.main-wrapper h1 {
+  font-family: 'Sacramento', cursive;
+  padding-bottom: 45px;
+  padding-top: 35px;
+  font-size: 72px; }
+.main-wrapper .row {
+  font-family: 'Asap', sans-serif; }
 
 #image {
   position: absolute;
@@ -183,10 +187,15 @@ h1 {
   width: 100%; }
 
 .purple-box {
-  background-color: rgba(66, 39, 59, 0.55);
-  padding: 35px;
-  margin-top: 25%;
-  font-weight: 900; }
+  background-color: rgba(119, 91, 136, 0.75);
+  padding: 10px 35px;
+  margin-top: 15%; }
+  .purple-box h1 {
+    font-size: 48px; }
+  .purple-box h1, .purple-box h2, .purple-box h3 {
+    line-height: inherit;
+    font-family: inherit;
+    text-align: left; }
   .purple-box #estimate-logic {
     margin-top: 30px; }
     .purple-box #estimate-logic input[type=text].estimate-input {
@@ -211,11 +220,8 @@ h1 {
 .hero-content {
   background-color: #fff; }
 
-.about-content {
-  background-color: #70566d; }
-
 .solid-background {
-  background-color: #d8a5ef; }
+  background-color: #AED581; }
   .solid-background .panel {
     box-shadow: none;
     background-color: inherit; }

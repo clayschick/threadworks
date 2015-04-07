@@ -38,13 +38,21 @@ $rgba-secondary-2-3: rgba(140,151,208,1);
 $rgba-secondary-2-4: rgba( 31, 53,170,1);
 $form-spacing: rem-calc(16) !default;
 $estimate-input-font-size: rem-calc(25) !default;
-h1 {
-  font-family: 'Alegreya', serif;
-  padding-bottom: 35px;
-  padding-top: 25px;
-  font-weight: 700;
-  font-size: 48px;
+body {
+  font-family: 'Asap', sans-serif;
 }
+.main-wrapper{
+  h1 {
+    font-family: 'Sacramento', cursive;
+    padding-bottom: 45px;
+    padding-top: 35px;
+    font-size: 72px;
+  }
+  .row{
+    font-family: 'Asap', sans-serif;
+  }
+}
+
 #image {
   position: absolute;
   width: 100%;
@@ -59,10 +67,20 @@ h1 {
   //height: 200px;
 }
 .purple-box {
-  background-color: rgba(66, 39,59,0.55);
-  padding: 35px;
-  margin-top: 25%;
-  font-weight: 900;
+  //background-color: rgba(66, 39,59,0.55);
+  background-color: rgba(119, 91, 136, 0.75);
+  //background-color: #9575CD;
+  padding: 10px 35px;
+  margin-top: 15%;
+  h1 {
+    font-size: 48px;
+  }
+  h1, h2, h3 {
+    line-height: inherit;
+    font-family: inherit;
+
+    text-align: left;
+  }
   #estimate-logic {
     margin-top: 30px;
     input[type=text].estimate-input {
@@ -98,10 +116,10 @@ h1 {
 }
 .about-content {
   //background-color: $rgba-primary-1;
-  background-color: rgba(112,86,109,1);
+  //background-color: rgba(112,86,109,1);
 }
 .solid-background {
-  background-color: $rgba-primary-2;
+  background-color: #AED581;
   .panel {
     box-shadow: none;
     background-color: inherit;
