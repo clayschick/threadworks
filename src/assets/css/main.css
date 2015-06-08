@@ -156,13 +156,6 @@ footer p, footer a {
 .radius.right.button:hover {
   background-color: rgba(0, 0, 0, 0.1); }
 
-/* Main Primary color */
-/* Main Secondary color (1) */
-/* Main Secondary color (2) */
-/* As RGBa codes */
-/* Main Primary color */
-/* Main Secondary color (1) */
-/* Main Secondary color (2) */
 body {
   font-family: 'Asap', sans-serif; }
 
@@ -171,14 +164,14 @@ body {
   padding-bottom: 45px;
   padding-top: 35px;
   font-size: 72px; }
-.main-wrapper .row {
+.main-wrapper .button {
   font-family: 'Asap', sans-serif; }
 
 #image {
   position: absolute;
   width: 100%;
   height: 100%;
-  background-image: url("../img/quilt4.jpg");
+  background-image: url("../img/quilt4-min.jpg");
   background-size: cover; }
 
 #content {
@@ -191,7 +184,7 @@ body {
   padding: 10px 35px;
   margin-top: 15%; }
   .purple-box h1 {
-    font-size: 48px; }
+    font-size: 38px; }
   .purple-box h1, .purple-box h2, .purple-box h3 {
     line-height: inherit;
     font-family: inherit;
@@ -214,7 +207,10 @@ body {
         font-size: initial; }
       .purple-box #estimate-logic input[type=text].estimate-input:focus {
         background-color: inherit; }
-    .purple-box #estimate-logic #price {
+    .purple-box #estimate-logic label {
+      font-size: inherit;
+      color: #fff; }
+    .purple-box #estimate-logic #price-text {
       font-size: 72px; }
 
 .hero-content {

@@ -18,7 +18,7 @@ function startExpress() {
   app.listen(EXPRESS_PORT);
 };
 
-function notifyLiveReload(event){
+function notifyLiveReload(event) {
   var fileName = require('path').relative(EXPRESS_ROOT, event.path);
 
   lr.changed({
@@ -56,13 +56,13 @@ gulp.task('foundation-js', function() {
     .pipe(gulp.dest('./src/assets/js/'));
 });
 
-gulp.task('default', ['initServer', 'watch'], function() {
+gulp.task('default', ['initServer', 'styles', 'watch'], function() {
   var options = {
     url: "http://localhost:3000"
   };
   gulp.src('./src/index.html')
     .pipe(plugins.open("", options));
 
-    gulp.start('foundation-scss');
-    //gulp.start('foundation-js');
+  gulp.start('foundation-scss');
+  //gulp.start('foundation-js');
 });

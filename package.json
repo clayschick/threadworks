@@ -25,5 +25,12 @@
     "gulp-watch": "^4.1.1",
     "node-static": "^0.7.6",
     "tiny-lr": "^0.1.5"
+  },
+  "devDependencies": {
+    "jasmine-core": "^2.3.3",
+    "karma": "^0.12.31",
+    "karma-chrome-launcher": "^0.1.12",
+    "karma-jasmine": "^0.3.5",
+    "karma-jasmine-jquery": "^0.1.1"
   }
 }

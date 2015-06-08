@@ -12,5 +12,10 @@
     "bower_components",
     "test",
     "tests"
-  ]
+  ],
+  "devDependencies": {
+    "karma-jasmine": "~0.3.5",
+    "jasmine": "~2.3.3",
+    "jasmine-jquery": "~2.1.0"
+  }
 }
