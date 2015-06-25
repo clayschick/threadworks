@@ -1,95 +1,136 @@
 @import "../../bower_components/foundation/scss/foundation/functions";
-
 $form-spacing: rem-calc(16) !default;
 $estimate-input-font-size: rem-calc(25) !default;
 body {
-  font-family: 'Asap', sans-serif;
+   font-family: 'Asap', sans-serif;
 }
-.main-wrapper{
-  h1 {
-    font-family: 'Sacramento', cursive;
-    padding-bottom: 45px;
-    padding-top: 35px;
-    font-size: 72px;
-  }
-  .button{
-    font-family: 'Asap', sans-serif;
-  }
+.main-wrapper {
+   h1 {
+      font-family: 'Sacramento', cursive;
+      padding-bottom: 45px;
+      padding-top: 35px;
+      font-size: 72px;
+   }
+   .button {
+      font-family: 'Asap', sans-serif;
+   }
 }
-
 #image {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  background-image: url("../img/quilt4-min.jpg");
-  background-size: cover;
+   position: absolute;
+   width: 100%;
+   height: 100%;
+   background-image: url("../img/quilt4-min.jpg");
+   background-size: cover;
 }
 #content {
-  position: absolute;
-  top: 100%;
-  width: 100%;
-  //height: 200px;
+   position: absolute;
+   top: 100%;
+   width: 100%;
+   //height: 200px;
+}
+#estimate-button {
+   //background-color: rgba(174,213,129,0.55);
+   background-color: rgba(66, 39,59,0.80);
+   position: relative;
+   margin-top: 100%;
+   font-family: inherit;
+   text-align: left;
+   color: #fff;
+   padding: 35px;
+   p {
+      font-size: 1.55em;
+      line-height: 1.35em;
+   }
+   a {
+      color: inherit;
+      i {
+         padding-left: 10px;
+      }
+   }
 }
 .purple-box {
-  //background-color: rgba(66, 39,59,0.55);
-  background-color: rgba(119, 91, 136, 0.75);
-  //background-color: #9575CD;
-  padding: 10px 35px;
-  margin-top: 15%;
-  h1 {
-   // TODO: change this to a percentage or use the foundation function
-    font-size: 38px;
-  }
-  h1, h2, h3 {
-    line-height: inherit;
-    font-family: inherit;
-    text-align: left;
-  }
-  #estimate-logic {
-    margin-top: 30px;
-    input[type=text].estimate-input {
-      background-color: inherit;
-      color: #fff;
-      font-size: $estimate-input-font-size;
-      height: ($estimate-input-font-size + ($form-spacing * 1.5) - rem-calc(1));
-      line-height: ($estimate-input-font-size + ($form-spacing * 1.5) - rem-calc(1));
-      &::-webkit-input-placeholder {
-        font-size: initial;
-      }
-      &::-moz-placeholder {
-        font-size: initial;
-      }
-      &:-ms-input-placeholder {
-        font-size: initial;
-      }
-      &:-moz-placeholder {
-        font-size: initial;
-      }
-      &:focus {
-        background-color: inherit;
-      }
-    }
-    label {
-      font-size: inherit;
-      color: #fff;
+   //background-color: rgba(66, 39,59,0.55);
+   //background-color: #9575CD;
+   padding: 10px 35px;
+   margin-top: 15%;
+   font-family: inherit;
+   h1 {
+      // TODO: change this to a percentage or use the foundation function
+      font-size: 38px;
    }
-    #price-text {
-      font-size: 72px;
-      //color: rgba(169,168,204,1);
-    }
-  }
+   h1,
+   h2,
+   h3 {
+      line-height: inherit;
+      text-align: left;
+   }
+   #estimate-logic {
+      //background-color: rgba(66, 39,59, 1);
+      margin-top: 30px;
+      input[type=text].estimate-input {
+         background-color: inherit;
+         color: #fff;
+         font-size: $estimate-input-font-size;
+         height: ($estimate-input-font-size + ($form-spacing * 1.5) - rem-calc(1));
+         line-height: ($estimate-input-font-size + ($form-spacing * 1.5) - rem-calc(1));
+         &::-webkit-input-placeholder {
+            font-size: initial;
+         }
+         &::-moz-placeholder {
+            font-size: initial;
+         }
+         &:-ms-input-placeholder {
+            font-size: initial;
+         }
+         &:-moz-placeholder {
+            font-size: initial;
+         }
+         &:focus {
+            background-color: inherit;
+         }
+      }
+      label {
+         font-size: inherit;
+         color: #fff;
+      }
+      #price-text {
+
+         //color: rgba(169,168,204,1);
+      }
+   }
 }
+
+// Estimate Calculator
+#estimator {
+   padding-top: 40px;
+}
+#estimate-logic {
+   //background-color: rgba(66, 39,59,0.55);
+   //background-color: rgba(172, 82, 213, 0.75);
+   margin-top: 35px;
+   padding-top: 35px;
+   label {
+      font-size: 1.25em;
+      margin-right: 15px;
+      padding-top: 3px;
+   }
+   #price-text {
+      font-size: 72px;
+      text-align: center;
+   }
+}
+
 .hero-content {
-  background-color: #fff;
+   background-color: #fff;
 }
 .about-content {
-  //background-color: $rgba-primary-1;
-  //background-color: rgba(112,86,109,1);
+   //background-color: $rgba-primary-1;
+   //background-color: rgba(112,86,109,1);
 }
 .solid-background {
-  background-color: #AED581;
-  .panel {
-    box-shadow: none;
-    background-color: inherit;
-  }
+   background-color: #aed581;
+   .panel {
+      box-shadow: none;
+      background-color: inherit;
+   }
 }

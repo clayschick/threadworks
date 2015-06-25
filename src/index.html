@@ -49,38 +49,26 @@ lang="en" data-useragent="Mozilla/5.0 (compatible; MSIE 10.0; Windows NT 6.2; Tr
             </div>
          </div>
       </div>
+
+      <!-- <div class="row">
+         <div class="small-6 large-6 columns">
+            <p>
+
+            </p>
+            <a href="#" id="estimate-button" class="button radius">
+               Get An Edge-To-Edge Quilting Price Estimate
+            </a>
+         </div>
+      </div> -->
       <div class="row">
-         <div class="large-6 columns about-box">
-            <div class="purple-box">
-               <h1>Edge To Edge Quilting Price Estimate</h1>
-               <!-- <a href="http://foundation.zurb.com/templates/banner-theme.html#" class="secondary small button">Learn More →</a> -->
-               <div class="row" id="estimate-logic">
-                  <div class="large-6 columns">
-                     <input id="length-input" class="estimate-input" type="text" placeholder="Length in inches" />
-                  </div>
-                  <div class="large-6 columns">
-                     <input id="width-input" class="estimate-input" type="text" placeholder="Width in inches" />
-                  </div>
-                  <div class="large-12 columns">
-                     <label>Select Bading
-                        <select id="bading">
-                           <option value="0.00">Choice 1</option>
-                           <option value="4.00">Choice 2</option>
-                        </select>
-                     </label>
-                     <label>Select Thread
-                        <select id="thread">
-                           <option value="0.05">Plain</option>
-                           <option value="0.07">Varigated</option>
-                        </select>
-                     </label>
-                  </div>
-                  <div id="price-text" class="large-12 columns">
-                     $0.00
-                  </div>
-               </div>
-               <p>Price does not include tax.</p>
-               <h3>Call for custom quilting price.</h3>
+         <div class="small-6 large-6 columns">
+            <div id="estimate-button">
+               <p>
+                  Get An Edge-To-Edge Quilting Price Estimate
+               </p>
+               <a href="#">
+                  Scroll down <i class="fa fa-chevron-down"></i>
+               </a>
             </div>
          </div>
       </div>
@@ -88,6 +76,7 @@ lang="en" data-useragent="Mozilla/5.0 (compatible; MSIE 10.0; Windows NT 6.2; Tr
 
    <div id="content">
       <section class="hero-content">
+
          <div class="row">
             <div class="large-8 columns about-content">
                <h4>My Mom is the best!</h4>
@@ -121,6 +110,85 @@ lang="en" data-useragent="Mozilla/5.0 (compatible; MSIE 10.0; Windows NT 6.2; Tr
                </ul>
             </div>
          </div>
+
+         <div class="solid-background">
+            <div class="row" id="estimate-logic">
+               <!-- <h1>Edge To Edge Quilting Price Estimate</h1> -->
+
+               <div class="large-12 columns" id="estimator">
+                  <div class="large-6 columns">
+
+                     <div class="row collapse postfix-radius">
+                        <div class="small-3 columns">
+                           <label for="length-input" class="right estimate-input">Length</label>
+                        </div>
+                        <div class="small-6 columns">
+                           <input type="text" id="length-input">
+                        </div>
+                        <div class="small-3 columns">
+                           <span class="postfix">Inches</span>
+                        </div>
+                     </div>
+
+                     <div class="row collapse postfix-radius">
+                        <div class="small-3 columns">
+                           <label for="width-input" class="right estimate-input">Width</label>
+                        </div>
+                        <div class="small-6 columns">
+                           <input type="text" id="width-input" class="estimate-input">
+                        </div>
+                        <div class="small-3 columns">
+                           <span class="postfix">Inches</span>
+                        </div>
+                     </div>
+
+                     <div class="row">
+                        <div id="price-text" class="large-6 large-centered columns">
+                           $0.00
+                        </div>
+                     </div>
+
+                     <div class="row">
+                        <div class="small-12 columns">
+                           <p>Price does not include tax.</p>
+                           <p>Call for custom quilting price.</p>
+                        </div>
+                     </div>
+                  </div>
+
+                  <div class="large-6 columns">
+                     <div class="row collapse">
+                        <div class="small-3 columns">
+                           <label for="batting" class="right">Batting</label>
+                        </div>
+                        <div class="small-9 columns">
+                           <select id="batting">
+                              <option value="0.30">Hobbs 80/20 Blend</option>
+                              <option value="0.35">Quilter's Dream 100% Cotton</option>
+                              <option value="0.33">Black Dream Poly</option>
+                              <option value="0.22">Hobbs Polydown</option>
+                              <option value="0.39">Heirloom Wool</option>
+                           </select>
+                        </div>
+                     </div>
+
+                     <div class="row collapse">
+                        <div class="small-3 columns">
+                           <label for="thread" class="right">Thread</label>
+                        </div>
+                        <div class="small-9 columns">
+                           <select id="thread">
+                              <option value="0.05">Plain</option>
+                              <option value="0.07">Varigated</option>
+                           </select>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+
+            </div>
+         </div>
+
       </section>
 
       <div class=solid-background>
