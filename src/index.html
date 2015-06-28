@@ -110,85 +110,42 @@ lang="en" data-useragent="Mozilla/5.0 (compatible; MSIE 10.0; Windows NT 6.2; Tr
                </ul>
             </div>
          </div>
+      </section>
 
-         <div class="solid-background">
-            <div class="row" id="estimate-logic">
-               <!-- <h1>Edge To Edge Quilting Price Estimate</h1> -->
-
-               <div class="large-12 columns" id="estimator">
-                  <div class="large-6 columns">
-
-                     <div class="row collapse postfix-radius">
-                        <div class="small-3 columns">
-                           <label for="length-input" class="right estimate-input">Length</label>
-                        </div>
-                        <div class="small-6 columns">
-                           <input type="text" id="length-input">
-                        </div>
-                        <div class="small-3 columns">
-                           <span class="postfix">Inches</span>
-                        </div>
+      <section  class="purple-box">
+         <div class="row">
+            <div class="large-12 columns about-box">
+               <div>
+                  <h1>Edge To Edge Quilting Price Estimate</h1>
+                  <div class="row" id="estimate-logic">
+                     <div class="large-6 columns">
+                        <input id="length-input" class="estimate-input-text" type="text" placeholder="Length in inches" />
+                        <input id="width-input" class="estimate-input-text" type="text" placeholder="Width in inches" />
                      </div>
-
-                     <div class="row collapse postfix-radius">
-                        <div class="small-3 columns">
-                           <label for="width-input" class="right estimate-input">Width</label>
-                        </div>
-                        <div class="small-6 columns">
-                           <input type="text" id="width-input" class="estimate-input">
-                        </div>
-                        <div class="small-3 columns">
-                           <span class="postfix">Inches</span>
-                        </div>
+                     <div class="large-6 columns">
+                        <select id="batting" class="estimate-input-select">
+                           <option value="0.00">Select batting</option>
+                           <option value="0.30">Hobbs 80/20 blend</option>
+                           <option value="0.35">Quilter's Dream 100% Cotton</option>
+                           <option value="0.30">Black Dream Poly</option>
+                           <option value="0.22">Hobbs Polydown</option>
+                           <option value="0.39">Heirloom Wool</option>
+                        </select>
+                        <select id="thread" class="estimate-input-select">
+                           <option value="default">Select Thread</option>
+                           <option value="0.05">Plain</option>
+                           <option value="0.07">Varigated</option>
+                        </select>
                      </div>
-
-                     <div class="row">
-                        <div id="price-text" class="large-6 large-centered columns">
-                           $0.00
-                        </div>
-                     </div>
-
-                     <div class="row">
-                        <div class="small-12 columns">
-                           <p>Price does not include tax.</p>
-                           <p>Call for custom quilting price.</p>
-                        </div>
+                     <div id="price-text" class="large-12 columns">
+                        $0.00
                      </div>
                   </div>
-
-                  <div class="large-6 columns">
-                     <div class="row collapse">
-                        <div class="small-3 columns">
-                           <label for="batting" class="right">Batting</label>
-                        </div>
-                        <div class="small-9 columns">
-                           <select id="batting">
-                              <option value="0.30">Hobbs 80/20 Blend</option>
-                              <option value="0.35">Quilter's Dream 100% Cotton</option>
-                              <option value="0.33">Black Dream Poly</option>
-                              <option value="0.22">Hobbs Polydown</option>
-                              <option value="0.39">Heirloom Wool</option>
-                           </select>
-                        </div>
-                     </div>
-
-                     <div class="row collapse">
-                        <div class="small-3 columns">
-                           <label for="thread" class="right">Thread</label>
-                        </div>
-                        <div class="small-9 columns">
-                           <select id="thread">
-                              <option value="0.05">Plain</option>
-                              <option value="0.07">Varigated</option>
-                           </select>
-                        </div>
-                     </div>
-                  </div>
+                  <p>Price does not include tax.</p>
+                  <h3>Call for custom quilting price.</h3>
                </div>
-
             </div>
          </div>
-
       </section>
 
       <div class=solid-background>

@@ -180,7 +180,7 @@ body {
   width: 100%; }
 
 #estimate-button {
-  background-color: rgba(66, 39, 59, 0.8);
+  background-color: rgba(174, 213, 129, 0.55);
   position: relative;
   margin-top: 100%;
   font-family: inherit;
@@ -196,49 +196,49 @@ body {
       padding-left: 10px; }
 
 .purple-box {
-  padding: 10px 35px;
-  margin-top: 15%;
-  font-family: inherit; }
+  background-color: rgba(119, 91, 136, 0.75);
+  padding: 10px 35px; }
   .purple-box h1 {
     font-size: 38px; }
   .purple-box h1, .purple-box h2, .purple-box h3 {
     line-height: inherit;
+    font-family: inherit; }
+  .purple-box h3 {
     text-align: left; }
-  .purple-box #estimate-logic {
-    margin-top: 30px; }
-    .purple-box #estimate-logic input[type=text].estimate-input {
-      background-color: inherit;
-      color: #fff;
-      font-size: 1.5625rem;
-      height: 3rem;
-      line-height: 3rem; }
-      .purple-box #estimate-logic input[type=text].estimate-input::-webkit-input-placeholder {
-        font-size: initial; }
-      .purple-box #estimate-logic input[type=text].estimate-input::-moz-placeholder {
-        font-size: initial; }
-      .purple-box #estimate-logic input[type=text].estimate-input:-ms-input-placeholder {
-        font-size: initial; }
-      .purple-box #estimate-logic input[type=text].estimate-input:-moz-placeholder {
-        font-size: initial; }
-      .purple-box #estimate-logic input[type=text].estimate-input:focus {
-        background-color: inherit; }
-    .purple-box #estimate-logic label {
-      font-size: inherit;
+
+#estimate-logic {
+  margin-top: 30px; }
+  #estimate-logic .estimate-inputs, #estimate-logic .estimate-input-text, #estimate-logic .estimate-input-select {
+    background-color: inherit;
+    color: #fff;
+    height: 3rem; }
+    #estimate-logic .estimate-inputs::-webkit-input-placeholder, #estimate-logic .estimate-input-text::-webkit-input-placeholder, #estimate-logic .estimate-input-select::-webkit-input-placeholder {
+      font-size: initial;
       color: #fff; }
+    #estimate-logic .estimate-inputs::-moz-placeholder, #estimate-logic .estimate-input-text::-moz-placeholder, #estimate-logic .estimate-input-select::-moz-placeholder {
+      font-size: initial;
+      color: #fff; }
+    #estimate-logic .estimate-inputs:-ms-input-placeholder, #estimate-logic .estimate-input-text:-ms-input-placeholder, #estimate-logic .estimate-input-select:-ms-input-placeholder {
+      font-size: initial;
+      color: #fff; }
+    #estimate-logic .estimate-inputs:-moz-placeholder, #estimate-logic .estimate-input-text:-moz-placeholder, #estimate-logic .estimate-input-select:-moz-placeholder {
+      font-size: initial;
+      color: #fff; }
+    #estimate-logic .estimate-inputs:focus, #estimate-logic .estimate-input-text:focus, #estimate-logic .estimate-input-select:focus {
+      background-color: inherit; }
+  #estimate-logic .estimate-input-text {
+    font-size: 1.5625rem;
+    line-height: 3rem; }
+  #estimate-logic label {
+    font-size: inherit;
+    color: #fff; }
+  #estimate-logic #price-text {
+    font-size: 72px;
+    text-align: center;
+    margin-top: 10px; }
 
 #estimator {
   padding-top: 40px; }
-
-#estimate-logic {
-  margin-top: 35px;
-  padding-top: 35px; }
-  #estimate-logic label {
-    font-size: 1.25em;
-    margin-right: 15px;
-    padding-top: 3px; }
-  #estimate-logic #price-text {
-    font-size: 72px;
-    text-align: center; }
 
 .hero-content {
   background-color: #fff; }

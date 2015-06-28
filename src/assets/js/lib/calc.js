@@ -3,7 +3,7 @@ var Calc = {
       Calc.config = {
          lengthInput: $("#length-input"),
          widthInput: $("#width-input"),
-         badingInput: $("#bading"),
+         battingInput: $("#batting"),
          threadInput: $("#thread"),
          priceText: $("#price-text")
       };
@@ -20,7 +20,7 @@ var Calc = {
       Calc.config.widthInput
          .keyup(Calc.setValue)
          .data("type", "width");
-      Calc.config.badingInput
+      Calc.config.battingInput
          .change(Calc.setValue)
          .data("type", "bading");
       Calc.config.threadInput
@@ -34,12 +34,12 @@ var Calc = {
    priceData: {
       length: 0.00,
       width: 0.00,
-      bading: 0.00,
+      batting: 0.00,
       thread: 0.05,
       labor: 0.02
    },
    computePrice: function computePrice() {
-      var dimensions = Calc.priceData.length * (Calc.priceData.width + Calc.priceData.bading)
+      var dimensions = Calc.priceData.length * (Calc.priceData.width + Calc.priceData.batting)
       var labor = Calc.priceData.labor + Calc.priceData.thread;
       var price = labor * dimensions;
       Calc.config.priceText.text("$" + $.number(price, 2));
