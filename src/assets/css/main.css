@@ -20,7 +20,6 @@ ul.inline-list.right a:hover {
   color: rgba(0, 0, 0, 0.5); }
 
 h1 {
-  font-family: 'American Typewriter', 'Courier New', Courier, Monaco, mono;
   font-size: 32px;
   color: #fff;
   line-height: 28px;
@@ -29,13 +28,11 @@ h1 {
   text-align: center; }
 
 h2 {
-  font-family: 'American Typewriter', 'Courier New', Courier, Monaco, mono;
   color: #fff;
   font-size: 36px;
   line-height: 34px; }
 
 h3 {
-  font-family: 'American Typewriter', 'Courier New', Courier, Monaco, mono;
   font-size: 24px;
   color: #fff;
   line-height: 10px;
@@ -44,7 +41,6 @@ h3 {
   padding-bottom: 10px; }
 
 h4 {
-  font-family: 'American Typewriter', 'Courier New', Courier, Monaco, mono;
   color: #000;
   font-size: 28px;
   padding-top: 5px; }
@@ -156,6 +152,19 @@ footer p, footer a {
 .radius.right.button:hover {
   background-color: rgba(0, 0, 0, 0.1); }
 
+@media only screen and (max-width: 40em) {
+  #header-title {
+    font-size: 42px;
+    padding: 0; }
+  #estimate-button {
+    margin-top: 0px !important; }
+  #award-quilts {
+    padding-top: 1.25em; }
+  .purple-box {
+    padding: 0px !important; }
+    .purple-box h1 {
+      font-size: 28px !important; } }
+
 body {
   font-family: 'Asap', sans-serif; }
 
@@ -163,7 +172,8 @@ body {
   font-family: 'Sacramento', cursive;
   padding-bottom: 45px;
   padding-top: 35px;
-  font-size: 72px; }
+  font-size: 72px;
+  line-height: 1.48em; }
 .main-wrapper .button {
   font-family: 'Asap', sans-serif; }
 
@@ -229,6 +239,8 @@ body {
   #estimate-logic .estimate-input-text {
     font-size: 1.5625rem;
     line-height: 3rem; }
+  #estimate-logic .estimate-input-select option {
+    background-color: rgba(119, 91, 136, 0.75); }
   #estimate-logic label {
     font-size: inherit;
     color: #fff; }
@@ -242,6 +254,9 @@ body {
 
 .hero-content {
   background-color: #fff; }
+
+.about-content h4 {
+  font-family: 'Asap', sans-serif; }
 
 .solid-background {
   background-color: #aed581; }

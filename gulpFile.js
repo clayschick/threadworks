@@ -45,6 +45,11 @@ gulp.task('styles', function() {
     .pipe(gulp.dest('src/assets/css'));
 });
 
+gulp.task('npm-styles', function() {
+  return gulp.src('npm_modules/hint.css/hint.min.css')
+    .pipe(gulp.dest('src/assets/css/hint'));
+});
+
 gulp.task('foundation-scss', function() {
   return gulp.src('bower_components/foundation/scss/foundation.scss')
     .pipe(plugins.sass())
@@ -56,7 +61,7 @@ gulp.task('foundation-js', function() {
     .pipe(gulp.dest('./src/assets/js/'));
 });
 
-gulp.task('default', ['initServer', 'styles', 'watch'], function() {
+gulp.task('default', ['initServer', 'styles', 'npm-styles', 'watch'], function() {
   var options = {
     url: "http://localhost:3000"
   };

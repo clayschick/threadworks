@@ -21,6 +21,7 @@ lang="en" data-useragent="Mozilla/5.0 (compatible; MSIE 10.0; Windows NT 6.2; Tr
    <!-- <link href='http://fonts.googleapis.com/css?family=Alegreya:700' rel='stylesheet' type='text/css'> -->
    <link href='http://fonts.googleapis.com/css?family=Sacramento' rel='stylesheet' type='text/css'>
    <link href='http://fonts.googleapis.com/css?family=Asap' rel='stylesheet' type='text/css'>
+   <link rel="stylesheet" href="assets/css/hint.min.css"></link>
    <script src="assets/js/vendor/modernizr.js"></script>
 </head>
 
@@ -28,17 +29,15 @@ lang="en" data-useragent="Mozilla/5.0 (compatible; MSIE 10.0; Windows NT 6.2; Tr
    <!--<link href="assets/css/css" rel="stylesheet" type="text/css">-->
    <section class="hero" id="image">
       <div class="row">
-         <div class="large-12 columns">
+         <div class="small-12 columns">
             <div class="main-wrapper">
-               <h1>Quilts By You and Me</h1>
+               <h1 id="header-title">Quilts By You and Me</h1>
                <hr>
                <div class="row">
-                  <div class="large-6 columns large-centered">
+                  <div class="small-11 columns large-centered">
                      <ul class="button-group even-3">
                         <li><a href="#" class="button">Home</a>
                         </li>
-                        <!-- <li><a href="#" class="button">Gallery</a>
-                        </li> -->
                         <li><a href="#" class="button">About</a>
                         </li>
                         <li><a href="#" class="button">Contact</a>
@@ -49,24 +48,13 @@ lang="en" data-useragent="Mozilla/5.0 (compatible; MSIE 10.0; Windows NT 6.2; Tr
             </div>
          </div>
       </div>
-
-      <!-- <div class="row">
-         <div class="small-6 large-6 columns">
-            <p>
-
-            </p>
-            <a href="#" id="estimate-button" class="button radius">
-               Get An Edge-To-Edge Quilting Price Estimate
-            </a>
-         </div>
-      </div> -->
       <div class="row">
-         <div class="small-6 large-6 columns">
+         <div class="small-12 large-6 columns">
             <div id="estimate-button">
                <p>
                   Get An Edge-To-Edge Quilting Price Estimate
                </p>
-               <a href="#">
+               <a id="estimate-link" href="#estimate-scroll">
                   Scroll down <i class="fa fa-chevron-down"></i>
                </a>
             </div>
@@ -85,7 +73,7 @@ lang="en" data-useragent="Mozilla/5.0 (compatible; MSIE 10.0; Windows NT 6.2; Tr
                </p>
                <p>These are some of the awards she's won.</p>
             </div>
-            <div class="large-4 columns">
+            <div class="large-4 columns" id="award-quilts">
                <ul class="small-block-grid-2">
                   <li>
                      <a href="http://foundation.zurb.com/templates/banner-theme.html#">
@@ -112,30 +100,38 @@ lang="en" data-useragent="Mozilla/5.0 (compatible; MSIE 10.0; Windows NT 6.2; Tr
          </div>
       </section>
 
-      <section  class="purple-box">
+      <section class="purple-box" id="estimate-scroll">
          <div class="row">
             <div class="large-12 columns about-box">
                <div>
                   <h1>Edge To Edge Quilting Price Estimate</h1>
                   <div class="row" id="estimate-logic">
                      <div class="large-6 columns">
-                        <input id="length-input" class="estimate-input-text" type="text" placeholder="Length in inches" />
-                        <input id="width-input" class="estimate-input-text" type="text" placeholder="Width in inches" />
+                        <label>Length
+                           <input id="length-input" class="estimate-input-text" type="text" placeholder="Inches" />
+                        </label>
+                        <label>Width
+                           <input id="width-input" class="estimate-input-text" type="text" placeholder="Inches" />
+                        </label>
+
                      </div>
                      <div class="large-6 columns">
-                        <select id="batting" class="estimate-input-select">
-                           <option value="0.00">Select batting</option>
-                           <option value="0.30">Hobbs 80/20 blend</option>
-                           <option value="0.35">Quilter's Dream 100% Cotton</option>
-                           <option value="0.30">Black Dream Poly</option>
-                           <option value="0.22">Hobbs Polydown</option>
-                           <option value="0.39">Heirloom Wool</option>
-                        </select>
-                        <select id="thread" class="estimate-input-select">
-                           <option value="default">Select Thread</option>
-                           <option value="0.05">Plain</option>
-                           <option value="0.07">Varigated</option>
-                        </select>
+                        <label>Batting
+                           <select id="batting" class="estimate-input-select">
+                              <option value="0.30">Hobbs 80/20 blend</option>
+                              <option value="0.35">Quilter's Dream 100% Cotton</option>
+                              <option value="0.30">Black Dream Poly</option>
+                              <option value="0.22">Hobbs Polydown</option>
+                              <option value="0.39">Heirloom Wool</option>
+                           </select>
+                        </label>
+                        <label>Thread
+                           <select id="thread" class="estimate-input-select">
+                              <option value="0.05">Plain</option>
+                              <option value="0.07">Varigated</option>
+                           </select>
+                        </label>
+
                      </div>
                      <div id="price-text" class="large-12 columns">
                         $0.00
@@ -195,9 +191,18 @@ lang="en" data-useragent="Mozilla/5.0 (compatible; MSIE 10.0; Windows NT 6.2; Tr
    <!--<script src="assets/js/zepto.js"></script>-->
    <script src="assets/js/vendor/jquery.js"></script>
    <script src="assets/js/vendor/jquery.number.min.js"></script>
+   <script src="assets/js/vendor/jquery.scrollTo.min.js"></script>
    <script src="assets/js/foundation.min.js"></script>
    <script>
       $(document).foundation();
+      $(document).ready(function() {
+         $('#estimate-link').click(function() {
+            $.scrollTo(this.hash, 750, {
+               easing: 'swing'
+            });
+            return false;
+         });
+      });
    </script>
 
    <!--<script src="assets/js/foundation.js"></script>

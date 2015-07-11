@@ -1,6 +1,8 @@
 @import "../../bower_components/foundation/scss/foundation/functions";
+
 $form-spacing: rem-calc(16) !default;
 $estimate-input-font-size: rem-calc(25) !default;
+$purple: rgba(119, 91, 136, 0.75);
 body {
    font-family: 'Asap', sans-serif;
 }
@@ -10,6 +12,7 @@ body {
       padding-bottom: 45px;
       padding-top: 35px;
       font-size: 72px;
+      line-height: 1.48em;
    }
    .button {
       font-family: 'Asap', sans-serif;
@@ -50,7 +53,7 @@ body {
 }
 .purple-box {
    //background-color: rgba(66, 39,59,0.55);
-   background-color: rgba(119, 91, 136, 0.75);
+   background-color: $purple;
    padding: 10px 35px;
    h1 {
       // TODO: change this to a percentage or use the foundation function
@@ -99,6 +102,9 @@ body {
    }
    .estimate-input-select {
       @extend .estimate-inputs;
+      option {
+         background-color: $purple;
+      }
    }
    label {
       font-size: inherit;
@@ -120,8 +126,9 @@ body {
    background-color: #fff;
 }
 .about-content {
-   //background-color: $rgba-primary-1;
-   //background-color: rgba(112,86,109,1);
+   h4 {
+      font-family: 'Asap', sans-serif;   
+   }
 }
 .solid-background {
    background-color: #aed581;
