@@ -3,26 +3,37 @@
 $form-spacing: rem-calc(16) !default;
 $estimate-input-font-size: rem-calc(25) !default;
 $purple: rgba(119, 91, 136, 0.75);
+$light-green: rgba(174,213,129,0.55);
 body {
    font-family: 'Asap', sans-serif;
 }
 .main-wrapper {
    h1 {
       font-family: 'Sacramento', cursive;
-      padding-bottom: 45px;
-      padding-top: 35px;
+      padding-bottom: 15px;
+      padding-top: 15px;
       font-size: 72px;
       line-height: 1.48em;
    }
    .button {
       font-family: 'Asap', sans-serif;
+      &:hover, &:visited {
+         background-color: $light-green;
+      }
    }
 }
 #image {
    position: absolute;
    width: 100%;
    height: 100%;
-   background-image: url("../img/quilt4-min.jpg");
+   background-image: url("../img/quilt4-min.webp");
+   background-size: cover;
+}
+#mobile-image {
+   position: absolute;
+   width: 100%;
+   height: 100%;
+   background-image: url("../img/quilt4-mobile-crop.jpeg");
    background-size: cover;
 }
 #content {
@@ -32,7 +43,7 @@ body {
    //height: 200px;
 }
 #estimate-button {
-   background-color: rgba(174,213,129,0.55);
+   background-color: $light-green;
    //background-color: rgba(66, 39,59,0.80);
    position: relative;
    margin-top: 100%;
@@ -127,7 +138,7 @@ body {
 }
 .about-content {
    h4 {
-      font-family: 'Asap', sans-serif;   
+      font-family: 'Asap', sans-serif;
    }
 }
 .solid-background {
