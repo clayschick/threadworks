@@ -17,31 +17,17 @@ function startExpress() {
    var app = express();
    app.set('view engine', 'ejs');
    app.set('views', './src');
-   var accepts = require('accepts');
-   var useragent = require('express-useragent');
+   //var accepts = require('accepts');
+   //var useragent = require('express-useragent');
    app.use(require('connect-livereload')());
-   app.use(useragent.express());
-   app.use(function(req, res, next) {
-      // var v = parseInt(req.useragent.version)
-      // var accept = req.accepts('webp');
-      // console.log(v);
-      // console.log(req.url);
-      // console.log(accept);
-
-      //console.log(req.useragent);
-
-      // var jpegUrl = '/assets/img/quilt4-min.jpg';
-
-      // if(accept === 'webp' && req.url === jpegUrl){
-      //    //req.url = '/assets/img/quilt4-min.webp';
-      //    res.send('/assets/img/quilt4-min.webp');
-      // }
-      next();
-   });
-   app.get('/', function(req, res) {
+   //app.use(useragent.express());
+   // app.use(function(req, res, next) {
+   //    next();
+   // });
+   /*app.get('/', function(req, res) {
       console.log(req.useragent.isMobile);
       res.render('index',{isMobile: req.useragent.isMobile})
-   });
+   });*/
 
    app.use(express.static(EXPRESS_ROOT));
 
@@ -49,6 +35,7 @@ function startExpress() {
 };
 
 function notifyLiveReload(event) {
+   console.log("Reloading page");
    var fileName = require('path').relative(EXPRESS_ROOT, event.path);
 
    lr.changed({
@@ -96,7 +83,7 @@ gulp.task('foundation-js', function() {
       .pipe(gulp.dest('./src/assets/js/'));
 });
 
-gulp.task('default', ['initServer', 'styles', 'npm-styles', 'watch'], function() {
+gulp.task('default', ['initServer', 'styles', 'watch'], function() {
    var options = {
       url: "http://localhost:3000"
    };

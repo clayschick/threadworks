@@ -22,19 +22,13 @@ body {
       }
    }
 }
+
 #image {
    position: absolute;
    width: 100%;
    height: 100%;
+   background-size: cover;
    background-image: url("../img/quilt4-min.webp");
-   background-size: cover;
-}
-#mobile-image {
-   position: absolute;
-   width: 100%;
-   height: 100%;
-   background-image: url("../img/quilt4-mobile-crop.jpeg");
-   background-size: cover;
 }
 #content {
    position: absolute;
@@ -42,11 +36,17 @@ body {
    width: 100%;
    //height: 200px;
 }
+
+#estimate-link-block {
+   position: absolute;
+   bottom: 25px;
+}
+
 #estimate-button {
    background-color: $light-green;
    //background-color: rgba(66, 39,59,0.80);
-   position: relative;
-   margin-top: 100%;
+   // position: relative;
+   // margin-top: 100%;
    font-family: inherit;
    text-align: left;
    color: #fff;

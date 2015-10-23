@@ -1,10 +1,18 @@
 @media only screen and (max-width: 40em) {
+   #image {
+      background-image: url("../img/stich1-mobile.jpeg") !important;
+   }
    #header-title {
       font-size: 42px;
       padding: 0;
    }
    #estimate-button {
-      margin-top: 0px !important;
+      //margin-top: 0px !important;
+      background-color: transparent !important;
+      padding: 0 !important;
+      p {
+
+      }
    }
    #award-quilts {
       padding-top: 1.25em;

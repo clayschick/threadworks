@@ -26,13 +26,13 @@ lang="en" data-useragent="Mozilla/5.0 (compatible; MSIE 10.0; Windows NT 6.2; Tr
 
 <body>
    <!--<link href="assets/css/css" rel="stylesheet" type="text/css">-->
-<%if (isMobile) { %>
-   <section class="hero" id="mobile-image">
+   <!-- <%if (isMobile) { %>
+   <section class="hero background-image" id="mobile-image">
 <% } else{ %>
-<section class="hero" id="image">
-<% } %>
-<!-- <section class="hero" id="image"> -->
-      <div class="row">
+<section class="hero background-image" id="image">
+<% } %> -->
+   <section class="hero" id="image">
+      <div class="row" id="header-block">
          <div class="small-12 columns">
             <div class="main-wrapper">
                <h1 id="header-title">Quilts By You and Me</h1>
@@ -52,8 +52,8 @@ lang="en" data-useragent="Mozilla/5.0 (compatible; MSIE 10.0; Windows NT 6.2; Tr
             </div>
          </div>
       </div>
-      <div class="row">
-         <div class="small-12 large-6 columns">
+      <div class="row" id="estimate-link-block">
+         <div class="small-12 medium-8 large-6 columns">
             <div id="estimate-button">
                <p>
                   Get An Edge-To-Edge Quilting Price Estimate
